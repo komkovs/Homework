@@ -4,5 +4,5 @@ if x > y:
     print("1-ое число больше 2")
 elif x < y:
     print("2-ое число больше 1")
-elif x == y:
+else :
     print("числа равны")
