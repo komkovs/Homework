@@ -3,8 +3,8 @@ b = int(input("Введите b"))
 c = int(input("Введите c"))
 d = int(input("Введите d"))
 f = int(input("Введите f"))
-if f - d == 0:
+y = f - d
+if y == 0:
     print("Делить на ноль нельзя!")
 else:
-    x == (a * b - c)/(f - d)
-    print("x")
+    print((a * b - c) / y)
