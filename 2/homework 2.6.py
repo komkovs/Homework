@@ -1,3 +1,7 @@
+z = []
 l = input()
 k = int(input())
-print(l[k - 1])
+for i in l:
+    if i.isdigit():
+        z.append(i)
+print(z[k - 1])
