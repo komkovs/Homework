@@ -1,4 +1,4 @@
-i = str(input())
+i = input()
 i = i.replace(" ","")
 s = list(i)
 n = list()
