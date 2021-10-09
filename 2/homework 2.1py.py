@@ -1,7 +1,6 @@
-x = str(input("Введите что-нибудь"))
+x = input("Введите что-нибудь")
 b = list()
 while x != '':
     b.append(x)
-    x = str(input())
-else:
-    print(b)
+    x = input()
+print(b)
