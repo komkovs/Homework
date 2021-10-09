@@ -8,5 +8,5 @@ n.sort()
 n.reverse()
 v = str()
 for l in range(0,len(n)):
-    v=v+str(n[l])
+    v = v+str(n[l])
 print(v)
