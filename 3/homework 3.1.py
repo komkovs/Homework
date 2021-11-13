@@ -1,9 +1,9 @@
-def function(x):
+def function():
+    f = input()
     b = list()
-    while x != '':
-        b.append(x)
-        x = input()
-    return(b)
+    while f != '':
+        b.append(f)
+        f = input()
+    return b
 
-f = input()
-print(function(f))
+print(function())
