@@ -1,10 +1,4 @@
-def function():
-    f = input()
-    b = list()
-    while f != '':
-        b.append(f)
-        f = input()
-    return b
+from homework import function
 def f1(b):
     print("\tЭлемент","|", "\tЧастота")
     for x in set(b):
