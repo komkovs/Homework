@@ -13,6 +13,7 @@ def search(d, n):
     return None
 n = int(input("Введите искомый элемент:"))
 
+
 print(search(d, n))
 assert search([], 4) == None
 assert search([1, 2, 3, 4, 5, 6, 7], 1) == 0
