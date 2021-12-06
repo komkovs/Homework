@@ -1,21 +1,22 @@
 d = [1, 2, 3, 4, 5, 6, 7]
 def search(d, n):
-    lower = 0
+    lower = -1
     upper = len(d) - 1
-    while lower <= upper:
+    while lower < upper - 1:
         center = (lower + upper) // 2
-        if d[center] == n:
-            return center
-        elif d[center] > n:
-            upper = center - 1
-        elif d[center] < n:
-            lower = center + 1
-    return None
+        if d[center] >= n:
+            upper = center
+        else:
+            lower = center
+    if upper >= 0 and d[upper] == n:
+        return upper
+    else:
+        return None
 n = int(input("Введите искомый элемент:"))
 
 
 print(search(d, n))
- assert search([], 42) is None
+assert search([], 42) is None
 assert search([0], 0) == 0
 assert search([0], 1) is None
 assert search([-1, 0, 42], 0) == 1
