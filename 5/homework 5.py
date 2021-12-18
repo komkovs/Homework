@@ -8,10 +8,10 @@ def search(d, n):
             upper = center
         else:
             lower = center
-    if upper >= 0 and d[upper] == n:
-        return upper
-    else:
+    if upper <= lower:
         return None
+    elif d[upper] == n:
+        return upper
 n = int(input("Введите искомый элемент:"))
 
 
@@ -30,5 +30,6 @@ assert search([42, 42, 42, 42, 42], 42) == 0
 assert search([-42, -42, -42, -42, -42], -42) == 0
 assert search([42, 42, 42, 42, 43], 43) == 4
 assert search([41, 42, 42, 42, 42], 41) == 0
+assert search([1, 2, 3, 4, 5, 6, 7], 5) == 4
 assert search([-2, -2, -1, 0, 1, 2, 2, 2], -1) == 2
 assert search([-2, -2, -1, 0, 1, 1, 2, 2], 1) == 4
